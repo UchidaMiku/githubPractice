@@ -1,0 +1,116 @@
+</html><!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML&CSS:lesson４</title>
+  <style>
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 550px;
+      
+      background-color: white;
+    }
+
+    .container {
+      display: flex;
+      width: 400px;
+      height: 530px;
+      place-content: center;
+
+    }
+
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+   
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .box{
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      border: 1px solid black;
+      margin: 3px;
+    
+    }
+
+
+    .red .box-container {
+      display: flex;
+      gap: 5px;
+      margin-top: 0px;
+      padding: 40px;
+      
+    }
+
+    .blue .box-container {
+      
+      display: flex;
+      gap: 5px;
+      margin-bottom: 480px;
+      margin-left: 80px;
+      padding: 0px;
+ 
+    
+    }
+
+    .green .box-container {
+   　justify-content: space-between;
+      gap: 10px 0px;
+      margin-top: 400px;
+      margin-right: 180px;
+      
+      
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="column red">
+   <div class="box-container">
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="column blue">
+    <div class="box-container">
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="column green">
+     <div class="box-container">
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
